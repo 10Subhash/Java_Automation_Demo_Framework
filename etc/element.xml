@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Practice Element Tab Tests">
+
+    <listeners>
+        <listener class-name="Utilities.CaptureScreenShot"></listener>
+    </listeners>
+
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://demoqa.com"/>
+
+    <test name="Login">
+        <classes>
+            <class name="Login_Test"/>
+        </classes>
+    </test>
+
+    <test name="Element_Tab">
+        <classes>
+            <class name="ElementTab_Test"/>
+        </classes>
+    </test>
+</suite>
